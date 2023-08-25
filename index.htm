@@ -1,12 +1,42 @@
+<!DOCTYPE html>
 <html>
  <head>
   <title>Emulation</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .responsive-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 75%; /* 480 / 640 * 100 = 75 */
+    }
+
+    .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #f0f0f0;
+      width:640px;
+      height:480px;
+      max-width:100%;
+    }
+
+  </style>
  </head>
  <body>
-  <div style="width:100%;height:100%;max-width:100%">
-   <div id="game"></div>
+  <div class="responsive-container">
+   <div class="content">
+    <div id="game"></div>
+   </div>
   </div>
-  <script type="text/javascript">
+   <script type="text/javascript">
     EJS_player = '#game';
     EJS_gameUrl = './zelda3.sfc'; // Url to Game rom
     EJS_core = 'snes';
