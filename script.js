@@ -1,7 +1,9 @@
 const games = {
 	'z3' : {'e' : 'snes', 'f' : 'zelda3.sfc'},
 	'zla' : {'e' : 'gba', 'f' : 'zla.gbc'},
-	'wl' : {'e' : 'gba', 'f' : 'wl.gb'}
+	'wl' : {'e' : 'gba', 'f' : 'wl.gb'},
+	'SoM' : {'e' : 'snes', 'f' : 'SoM.sfc'}
+	
 }
 
 
